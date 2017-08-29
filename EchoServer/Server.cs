@@ -29,6 +29,8 @@ namespace EchoServer
             {
                 string inlinje = sr.ReadLine();
                 sw.WriteLine(inlinje);
+                var strs = inlinje.Split(' ');
+                sw.WriteLine(strs.Length);
                 sw.Flush();
             }
         }
